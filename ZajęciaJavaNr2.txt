@@ -1,0 +1,90 @@
+int [] x;
+int [5] x;
+drugi siê nie skompiluje w javie, bo nie mo¿na okreœlaæ rozmairu przy deklaracji
+
+Test t1 = new Test();
+Test t2 = new Test();
+
+
+
+if(!t1.equals(t2))
+	S.O.PL("A");
+if(t1.instanceof Object)
+	S.O.PL("B");
+
+Wykona siê pierwszy warunek poniewa¿ t1 i t2 maj¹ zarezerwowane ró¿ne kawa³ki pamiêci wiêc nie s¹ równe
+
+
+
+
+Interface A{}   tylko deklaracje, ¿adnych informacji o zmiennej
+Class B{}
+Class C{}
+Interface D{}
+
+Class E implements A{}
+Class F implements A,D{} klasy mog¹ implementowaæ wiele interfejsów
+Class G extracts B implements A{} klasa G rozszerza klasê B która zawiera implementacje interfejsu A
+	G dziedziczy po B
+Class G extracts B implements A,D{} --||-- ale dwie implementacje interfejsów
+Klasy zawsze dziedzicz¹ po Object
+
+Class Animal{
+	public void eat(){}
+}
+Class Dog2 extracts Animal{
+public void eat(){};
+main(){
+Animal a = new Dog2();
+Dog2 d = new Dog2();
+d.eat();
+a.eat();
+}
+
+Pakiety odwrotna nazwa domenowa
+
+Co zrobiæ aby nie dziedziczyæ
+
+class A{
+}
+
+IS-A (DZIEDZICZENIE)
+class B extends A{
+B b = new b();
+b.a();
+b.b();
+}
+
+
+VS
+
+HAS=A(KOMPOZYCJA)
+class B
+{
+B b=new B();
+b.b();
+b.getA().a();
+}
+
+Wejœciówka!
+Metoda statyczna, nowy obiekt, wywo³anie z klasy, kompozycja a dziedziczenie(kolejnoœæ).
+Proklamacja static w deklaracjach umo¿liwiaj¹ca dostawanie siê do klas i metod
+
+
+Singleton 
+Class Single{
+	private static Single instanc(=new Single)!!!;
+	static Single(){
+		public static Single getInstance(){
+			(if(instance==null)
+				instance= new Single();)!!!
+			return instance;
+		}
+	}
+
+
+Pr.dom.
+Kolejnoœc wywo³ywañ
+Napisanie Singleotna w 2 wersjach NAWIASY
+Udowodniæ ¿e jest to singleton, zmienne, metoda. Zaprezentowanie.
+Który lepszy Singleton.
