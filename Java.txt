@@ -1,0 +1,83 @@
+MAIN
+
+package math.uni.lodz;
+
+public class MySecondCalculator {
+
+/**
+* @param args
+*/
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+
+Calculator myCalculator = new Calculator(6,7);
+
+//
+//
+
+Calculator nextGenCalculator = new Calculator();
+//
+//
+myCalculator.add();
+
+myCalculator.setFirstNumber(10);
+myCalculator.setSecondNumber(8);
+myCalculator.getResult();
+
+Calculator myCalculatorOne = new Calculator(6,7);
+Calculator myCalculatorTwo = new Calculator(6,7);
+}
+
+}
+
+KLASA
+
+package math.uni.lodz;
+
+public class Calculator {
+
+private int firstNumber;
+private int secondNumber;
+private int result;
+
+
+public Calculator(int firstNumber, int secondNumber) {
+// TODO Auto-generated constructor stub
+this.firstNumber = firstNumber;
+this.secondNumber = secondNumber;
+}
+
+
+public Calculator() {
+// TODO Auto-generated constructor stub
+
+}
+
+
+public void add() {
+// TODO Auto-generated method stub
+this.result=this.firstNumber+this.secondNumber;
+}
+
+public void setFirstNumber(int firstNumber) {
+this.firstNumber = firstNumber;
+}
+/*
+public int getSecondNumber() {
+return secondNumber;
+}
+*/
+public void setSecondNumber(int secondNumber) {
+this.secondNumber = secondNumber;
+}
+public int getResult() {
+return result;
+}
+}
+
+W którym momencie nastêpuje zainicjowanie A-x=10
+1) czy w momencie kompliacji?
+2) w momencie pierwszego uruchomienia?
+w Jav'ie i c++, ZMIENNE STATYCZNE,
+konstruktory puste,
+klasy odwo³uj¹ce siê do tego samego kawa³ka pamiêci
