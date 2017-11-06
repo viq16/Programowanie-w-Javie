@@ -1,0 +1,22 @@
+Coding rules
+¯adna funkcja nie ma wiêcej ni¿ 10 linii kodu 
+Test coverage 65%
+3 unity, liczby x(W) - Y(L) - Z(H) (SZEŒÆIAN)
+Tworzy siê wirtualna kostka
+U¿ywamy do wyci¹gania mniejszych kostek dŸwigu który mo¿e
+wyci¹gaæ pojedyncze mniejsze kostki
+¿eby dostaæ siê do najni¿szego poziomu kostek trzeba najpierw zebraæ te powy¿sze
+Jeden dŸwig, paczka ma okreœlony typ, dŸwig mo¿e podnieœæ tylko jeden U, pierwszy z góry
+Ka¿da paczka ma:
+opis, ilosc ruchów, datê dodatnia, #, priorytet
+Paczka z ni¿szym priorytetem nie mo¿e byæ po³o¿ona na paczkê z wy¿szym priorytetem
+
+Implement:
+
+getPackageByNumber()
+getAllPackagesByType(Type)
+getHistoryMoves()
+getStatesOfStorage()
+
+Dlaczego klasa napisana jako singleton oparta o enum jest lepsza ni¿ ten singleton który zosta³ napisany
+na zajêciach.
