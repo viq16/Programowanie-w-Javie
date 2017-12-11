@@ -1,0 +1,17 @@
+EXCEPTIONS
+Rozró¿nia 3 bloki
+try{
+}
+catch{
+}
+finnally{
+}
+
+Blok try wykonuje instrukcje
+Bloki Catch'e polegaj¹ na sprawdzaniu wyj¹tków
+Blok finnally wykonywany jest zawsze, nawet jeœli wyj¹tki nie
+pojawi¹ siê, mo¿na tam wykonywaæ przeró¿ne instrukcje
+Trzeba równie¿ ustrzegaæ siê pustych plików
+
+https://docs.oracle.com/javase/tutorial/essential/exceptions/
+https://www.tutorialspoint.com/java/java_exceptions.htm
